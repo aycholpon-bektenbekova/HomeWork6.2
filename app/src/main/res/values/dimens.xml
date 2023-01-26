@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_margin">24dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="height">0dp</dimen>
+    <dimen name="rv_margin">16dp</dimen>
+    <dimen name="corners">10dp</dimen>
+    <dimen name="elevation">20dp</dimen>
+    <dimen name="card_view">100dp</dimen>
+    <dimen name="button">50dp</dimen>
+    <dimen name="corner_button">50dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+</resources>
