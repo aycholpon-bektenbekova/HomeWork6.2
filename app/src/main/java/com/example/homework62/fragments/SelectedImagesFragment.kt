@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.homework62.adapters.SelectedImagesAdapter
 import com.example.homework62.databinding.FragmentSelectedImagesBinding
 
@@ -25,6 +26,7 @@ class SelectedImagesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding){
             rvPhotos.adapter = adapter
+            rvPhotos.layoutManager = GridLayoutManager(activity, 3)
             exBtn.setOnClickListener {
                 findNavController().navigateUp()
             }
