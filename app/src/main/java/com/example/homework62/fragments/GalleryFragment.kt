@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.homework62.R
 import com.example.homework62.adapters.ImageAdapter
 import com.example.homework62.databinding.FragmentGalleryBinding
@@ -28,8 +29,7 @@ class GalleryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             rvPhotos.adapter = adapter
-            //val manager = GridLayoutManager.HORIZONTAL
-            //rvPhotos.layoutManager = manager
+            rvPhotos.layoutManager = GridLayoutManager(activity, 3)
             btnSend.setOnClickListener {
                 findNavController().navigate(R.id.selectedImagesFragment, bundleOf("select photo" to selectedImages))
             }
